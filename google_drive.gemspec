@@ -13,11 +13,11 @@ Gem::Specification.new do |s|
   s.files = ['README.md'] + Dir['lib/**/*']
   s.require_paths = ['lib']
 
-  s.add_dependency('nokogiri', ['>= 1.5.3', '< 2.0.0'])
-  s.add_dependency('google-apis-drive_v3', '>= 0.5.0', '< 1.0.0')
-  s.add_dependency('google-apis-sheets_v4', '>= 0.4.0', '< 1.0.0')
-  s.add_dependency('googleauth', ['>= 0.5.0', '< 1.0.0'])
-  s.add_development_dependency('test-unit', ['>= 3.0.0', '< 4.0.0'])
-  s.add_development_dependency('rake', ['>= 0.8.0'])
-  s.add_development_dependency('rspec-mocks', ['>= 3.4.0', '< 4.0.0'])
+  s.add_dependency('nokogiri', '~> 1.13', '>= 1.13.6')
+  s.add_dependency('google-apis-drive_v3', '~> 0.25.0')
+  s.add_dependency('google-apis-sheets_v4', '~> 0.17.0')
+  s.add_dependency('googleauth', '~> 1.2')
+  s.add_development_dependency('test-unit', '~> 3.5', '>= 3.5.3')
+  s.add_development_dependency('rake', '~> 13.0', '>= 13.0.6')
+  s.add_development_dependency('rspec-mocks', '~> 3.11', '>= 3.11.1')
 end
